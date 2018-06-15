@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "393479922448",
+    "firebase_url": "https://visit-the-city-acc13.firebaseio.com",
+    "project_id": "visit-the-city-acc13",
+    "storage_bucket": "visit-the-city-acc13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393479922448:android:2df684ae85190416",
+        "android_client_info": {
+          "package_name": "com.bezets.cityappar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393479922448-4si59id277p544meccv8psbbcah432fn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bezets.cityappar",
+            "certificate_hash": "18aa7a7dce6098fcba267558123a9b98982c8c72"
+          }
+        },
+        {
+          "client_id": "393479922448-0b01off4dgecvj6oiv4vtuh6kig00s22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaJ4de0wpLe9967JRsQnGeKHnpv97_c5s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393479922448-0b01off4dgecvj6oiv4vtuh6kig00s22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

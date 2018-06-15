@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_allplace"
+            android:icon="@drawable/ic_all_places"
+            android:title="@string/nav_title_all_place" />
+
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_categories"
+            android:title="@string/nav_title_categories" />
+
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/nav_title_map" />
+
+        <item
+            android:id="@+id/nav_ar"
+            android:icon="@drawable/ic_ar_camera"
+            android:title="@string/nav_ar_map" />
+
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item android:title="@string/nav_title_my_activities">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_review"
+                        android:icon="@drawable/ic_rate_review"
+                        android:title="@string/nav_title_rates_and_reviews" />
+                    <item
+                        android:id="@+id/nav_gallery"
+                        android:icon="@drawable/ic_collections"
+                        android:title="@string/nav_title_gallery" />
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_cancel"
+                        android:title="@string/nav_title_sign_out" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="none">
+        <item android:title="@string/setting_test">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_about"
+                        android:icon="@drawable/ic_about"
+                        android:title="@string/str_about" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

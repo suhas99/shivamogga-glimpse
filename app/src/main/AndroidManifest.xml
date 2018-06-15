@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bezets.cityappar">
+
+    <permission
+        android:name="com.bezets.cityappar.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.bezets.cityappar.MAPS_RECEIVE" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme4">
+
+        <activity
+            android:name=".main.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.IntroActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/MyMaterialTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.SignInActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/MyMaterialTheme">
+        </activity>
+
+        <activity
+            android:name=".feeds.FeedsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/MyMaterialTheme3">
+        </activity>
+
+        <activity
+            android:name=".description.DescriptionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/MyMaterialTheme3" />
+
+        <activity
+            android:name=".reviews.ReviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".about.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".maps.online.MapsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".maps.online.DirectionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".gallery.GalleryListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".users.ImageShowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".description.GallerySingleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".cropper.CropImageActivity"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <activity
+            android:name=".errorhandler.DefaultErrorActivity"
+            android:process=":error_activity"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".ar.rotation.ARActivity"
+            android:label="@string/nav_ar_map"
+            android:screenOrientation="userPortrait"
+            android:theme="@style/MaterialAR">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- FACEBOOK LOGIN CONFIG -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

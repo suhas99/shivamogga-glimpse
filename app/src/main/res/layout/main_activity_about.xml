@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_color"
+        android:minHeight="?attr/actionBarSize"
+        android:textAppearance="@style/TextAppearance.FontPath.Bold"
+        android:theme="@style/ActionBarThemeOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/main_menu_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_app_splash" />
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.FontPath.Bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtAppDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:lineSpacingExtra="8dp"
+                    android:textColor="@color/about_description_color"
+                    android:textSize="@dimen/about_description_text_size"
+                    android:gravity="center"
+                    android:text="Visit The City is an application of information of important places (Point of Interest) for the City. This application can help the local tourists or from out of town to find places to visit online or offline"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/about_separator_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Version"
+                    android:textAppearance="@style/TextAppearance.FontPath.Bold"
+                    android:textColor="@color/about_text_color"
+                    android:textSize="@dimen/about_group_item_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/about_separator_color" />
+
+            <RelativeLayout
+                android:id="@+id/show_con_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect with us"
+                    android:textColor="@color/about_text_color"
+                    android:textSize="@dimen/about_group_item_text_size" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:tint="@color/about_text_color" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/about_separator_color" />
+
+            <LinearLayout
+                android:id="@+id/con_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/btnEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_email"
+                        android:tint="@color/about_item_icon_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/imageView5"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:text="@string/about_contact_us"
+                        android:textColor="@color/about_text_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/about_separator_color" />
+
+                <RelativeLayout
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_facebook"
+                        android:tint="@color/about_facebook_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/imageView6"
+                        android:layout_toRightOf="@+id/imageView6"
+                        android:text="@string/about_facebook"
+                        android:textColor="@color/about_facebook_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/about_separator_color" />
+
+                <RelativeLayout
+                    android:id="@+id/btnTwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_twitter"
+                        android:tint="@color/about_twitter_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/imageView7"
+                        android:layout_toRightOf="@+id/imageView7"
+                        android:text="@string/about_twitter"
+                        android:textColor="@color/about_twitter_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/about_separator_color" />
+
+                <RelativeLayout
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_instagram"
+                        android:tint="@color/about_instagram_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/album_title_padding"
+                        android:layout_toEndOf="@+id/imageView8"
+                        android:layout_toRightOf="@+id/imageView8"
+                        android:text="@string/about_instagram"
+                        android:textColor="@color/about_instagram_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/about_separator_color" />
+
+                <RelativeLayout
+                    android:id="@+id/btnPlaystore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_google_play"
+                        android:tint="@color/about_play_store_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/album_title_padding"
+                        android:layout_toEndOf="@+id/imageView9"
+                        android:layout_toRightOf="@+id/imageView9"
+                        android:text="@string/about_play_store"
+                        android:textColor="@color/about_play_store_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/about_separator_color" />
+
+                <RelativeLayout
+                    android:id="@+id/btnYoutube"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_youtube"
+                        android:tint="@color/about_youtube_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/album_title_padding"
+                        android:layout_toEndOf="@+id/imageView10"
+                        android:layout_toRightOf="@+id/imageView10"
+                        android:text="@string/about_youtube"
+                        android:textColor="@color/about_youtube_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/about_separator_color" />
+
+                <RelativeLayout
+                    android:id="@+id/btnWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="@dimen/about_icon_size"
+                        android:layout_height="@dimen/about_icon_size"
+                        android:src="@drawable/about_icon_link"
+                        android:tint="@color/about_item_icon_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/album_title_padding"
+                        android:layout_toEndOf="@+id/imageView11"
+                        android:layout_toRightOf="@+id/imageView11"
+                        android:text="@string/about_website"
+                        android:textColor="@color/about_text_color"
+                        android:textSize="@dimen/about_item_text_size" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/bg_circular_gradient"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/customactivityoncrash_error_activity_image"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_android_robot_mobile_mood_emoji_crash_bug_dead" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/customactivityoncrash_error_activity_image"
+            android:layout_marginTop="50dp"
+            android:text="Ooops!"
+            android:textAppearance="@style/TextAppearance.FontPath.Bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:text="@string/customactivityoncrash_error_activity_error_title"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="#747474" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="24dp"
+            android:text="@string/customactivityoncrash_error_activity_error_occurred_explanation"
+            android:textAppearance="@style/TextAppearance.FontPath"
+            android:textColor="#747474" />
+
+        <Button
+            android:id="@+id/customactivityoncrash_error_activity_restart_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/customactivityoncrash_error_activity_close_app"
+            android:textAppearance="@style/TextAppearance.FontPath.Bold"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/customactivityoncrash_error_activity_more_info_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/customactivityoncrash_error_activity_error_report"
+            android:textAppearance="@style/TextAppearance.FontPath.Bold"
+            android:textColor="#767676" />
+
+    </RelativeLayout>
+</RelativeLayout>
